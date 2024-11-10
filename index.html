@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Swastik Salokhe Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dad0d2ffb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul><i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm Swastik <br>Salokhe</h1>
+            </div>
+        </div>
+    </div>
+    
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="images/user1.jpg" >
+            </div>
+            <div class="about-col2">
+                <h1 class="subtitle">About Me</h1>
+                <p> I am a dedicated web developer with strong technical expertise in HTML, CSS, Bootstrap, ASP.NET, ASP.NET MVC, and MySQL. Along with a solid foundation in front-end and back-end development, I bring effective communication skills and a proven ability to lead and collaborate in team environments. I am passionate about building user-friendly, efficient, and scalable web applications and thrive in projects that challenge me to grow and innovate.
+                    </p>
+                <div class="tabtitles">
+                    <p class="tablink activlink" onclick="opentab('skills')">Skills</p>
+                    <p class="tablink " onclick="opentab('Education')">Education</p>
+                    <p class="tablink" onclick="opentab('Projects')">Projects</p>
+                </div>
+                    <div class="tabcontent activtab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Language</span><br>C#, Python, PHP
+                            </li>
+                            <li><span>Front-End</span><br>HTML, CSS, Bootstrap </li>
+                            <li><span>Framework</span><br>Asp.Net </li>
+                            <li><span>Database</span><br>Sql Pl-Sql</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="Education">
+                        <ul>
+                            <li>
+                                <span>MCA 2024</span><br> 67% <br>Shivaji University Kolhapur.
+                            </li>
+                            <li><span>Bachelor of Computer Science 2022</span><br>77.53% <br> The New College Kolhapur. </li>
+                            <li><span>HSC 2019</span><br>61.38% <br>Vidyapeeth Jr. College, Kolhapur </li>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="Projects">
+                        <ul>
+                            <li>
+                                <span>Catering Management System</span><br>THe Main Objective of Catering Mangement to develop </Websites>
+                            </li>
+                            <li><span>Online Turf Booking System</span><br>The Main Objective of the "Turf Booking System" is</li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<div id="service">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="serviceslist">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I can design Web pages.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Mobile Design</h2>
+                <p>I can design Web pages.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Design</h2>
+                <p>I can design Web pages.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/work-1.png" >
+               <div class="layer">
+                <h3>Social media</h3>
+                <p>this is the first project</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Social media</h3>
+                    <p>this is the second project</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Social media</h3>
+                    <p>this is the Third project</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa-regular fa-envelope"></i> swastiksalokhe@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7620252644</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Add Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copuright @ Swastik Salokhe. Made with <i class="fa-solid fa-heart"></i> easy tutorials</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tablink");
+    var tabcontents=document.getElementsByClassName("tabcontent");
+
+    function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("activlink");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("activtab");
+        }
+        event.currentTarget.classList.add("activlink");
+        document.getElementById(tabname).classList.add("activtab")
+
+    }
+</script>
+
+<script>
+    var sidem = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidem.style.right="0";
+    }
+    function closemenu(){
+        sidem.style.right="-180px";
+    }
+</script>
+
+
+</body>
+</html>
